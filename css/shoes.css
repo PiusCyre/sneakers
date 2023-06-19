@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.6s;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+.hidden {
+  display: none;
+}
+
+.blur-effect {
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.relative-con {
+  position: relative;
+  margin-top: -14rem;
+}
+.relative-con .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  pointer-events: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  display: block;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  width: auto;
+  padding-inline: 60px;
+  padding-block: 20px;
+  border-radius: 20px;
+  margin-top: 0;
+}
+.modal .close-modal {
+  float: right;
+  cursor: pointer;
+}
+.modal .hero-image {
+  width: 370px;
+  height: 390px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.modal div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 2rem;
+}
+.modal div .arrow {
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
+  align-self: center;
+  cursor: pointer;
+}
+.modal .sneaks {
+  display: flex;
+  gap: 23.5px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.modal .sneaks img {
+  width: 70px;
+  height: 75px;
+  border-radius: 10px;
+}
+.modal .sneaks img:focus {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+.modal .sneaks img:hover {
+  background-color: white;
+  opacity: 0.4;
+  outline: 2px solid hsl(26, 100%, 55%);
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding-inline: 50px;
+  padding-block: 20px;
+  border-bottom: 1px solid lightgrey;
+}
+nav .logo {
+  height: 20px;
+  width: 6.6rem;
+  margin-top: 7px;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 1rem;
+  margin-top: 9px;
+}
+nav ul a {
+  transition: all 1s;
+}
+nav ul a:hover {
+  color: black;
+  font-weight: bold;
+  padding-bottom: 1.8rem;
+  border-bottom: 3px solid hsl(26, 100%, 55%);
+}
+nav .avatar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+nav .avatar .icon-cart {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+nav .avatar .avatar-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+nav .avatar .avatar-icon:hover {
+  border: 2px solid hsl(26, 100%, 55%);
+  border-radius: 50%;
+}
+nav .menu {
+  display: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+  align-items: center;
+  place-items: center;
+  margin-top: 3rem;
+}
+section .sneak-peek .hero-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+section .sneak-peek .sneaks {
+  display: flex;
+  gap: 23.5px;
+  margin-top: 10px;
+}
+section .sneak-peek .sneaks img {
+  width: 70px;
+  height: 75px;
+  border-radius: 10px;
+}
+section .sneak-peek .sneaks img:focus {
+  border: 2px solid hsl(26, 100%, 55%);
+}
+section .sneak-peek .sneaks img:hover {
+  background-color: white;
+  opacity: 0.4;
+  outline: 2px solid hsl(26, 100%, 55%);
+  cursor: pointer;
+}
+section .rhs {
+  width: 380px;
+}
+section .rhs h5 {
+  color: hsl(26, 100%, 55%);
+  margin-bottom: 1rem;
+}
+section .rhs h1 {
+  font-weight: 900;
+  font-size: 2rem;
+  margin-bottom: 1.75rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+section .rhs p {
+  color: grey;
+  margin-bottom: 1rem;
+}
+section .rhs .price {
+  display: flex;
+  gap: 20px;
+}
+section .rhs .price h4 {
+  font-weight: 900;
+  font-size: larger;
+}
+section .rhs .price p {
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: small;
+}
+section .rhs .strikethrough {
+  text-decoration: line-through;
+}
+section .rhs .last {
+  display: flex;
+  justify-content: space-between;
+}
+section .rhs .last .count {
+  display: flex;
+  gap: 35px;
+  background-color: hsl(223, 64%, 98%);
+  opacity: 0.8;
+  padding: 6px;
+  border-radius: 10px;
+  padding-bottom: 1px;
+}
+section .rhs .last .count img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 13px;
+  cursor: pointer;
+}
+section .rhs .last .button {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  width: 220px;
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+  padding: 5px;
+  border-radius: 7px;
+  padding-bottom: 0px;
+}
+section .rhs .last .button p {
+  color: white;
+  margin-top: 3px;
+}
+section .rhs .last .button img {
+  width: 15px;
+  height: 15px;
+  color: white;
+  margin-top: 3px;
+}
+
+@media only screen and (max-width: 934px) {
+  .sneak-peek {
+    margin-bottom: 5rem;
+  }
+  .relative-con .modal {
+    margin-top: -18rem;
+  }
+  .rhs {
+    margin-bottom: 5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .idan {
+    max-width: 100%;
+  }
+  nav {
+    justify-content: space-between;
+    padding-inline: 10px;
+    z-index: 5;
+  }
+  nav .nav-ul {
+    transform: translateX(-150%);
+  }
+  nav .menu {
+    display: block;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 7px;
+  }
+  nav .mobile-nav {
+    background-color: white;
+    margin-top: 0;
+    height: 100dvh;
+    width: 45%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 10px;
+  }
+  nav .mobile-nav a:hover {
+    border-bottom: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hero-grid {
+    margin: 0;
+    margin-top: 0;
+    place-content: center;
+    place-items: center;
+  }
+  .hero-grid .sneak-peek {
+    max-width: 100%;
+  }
+  .hero-grid .sneak-peek .hero-image {
+    width: 100%;
+    display: block;
+    margin: auto;
+    height: 420px;
+    border-radius: 0px;
+    margin-bottom: 2rem;
+  }
+  .hero-grid .sneak-peek .sneaks {
+    justify-content: center;
+    gap: 0.5rem;
+  }
+  .hero-grid .sneak-peek .sneaks .flex-images {
+    border-radius: 20px;
+  }
+  .rhs {
+    width: 100%;
+  }
+  .rhs .last {
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 2rem;
+  }
+  .rhs .last .count {
+    align-self: center;
+    margin-bottom: 2rem;
+  }
+  .rhs .last .button {
+    align-self: center;
+    width: 280px;
+    padding: 12px;
+  }
+  .relative-con {
+    display: none;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .hero-grid .sneak-peek {
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-grid .sneak-peek .hero-image {
+    width: 345px;
+    margin-inline: 0;
+  }
+  .hero-grid .sneak-peek .sneaks {
+    gap: 0.3rem;
+  }
+  .hero-grid .rhs {
+    width: 70%;
+    display: block;
+    margin: auto;
+  }
+}/*# sourceMappingURL=shoes.css.map */

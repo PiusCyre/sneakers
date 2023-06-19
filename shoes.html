@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sneakers</title>
+    <link rel="stylesheet" href="css/shoes.css" />
+  </head>
+  <body>
+    <div class="idan">
+      <nav>
+        <img
+          src="images/icon-menu.svg"
+          alt="icon-menu"
+          class="menu"
+          id="icon-menu"
+        />
+        <img src="images/logo.svg" alt="" class="logo" />
+        <ul class="nav-ul mobile-nav">
+          <img
+            src="images/icon-close.svg"
+            alt="icon-close"
+            class="menu"
+            id="icon-close"
+          />
+          <li><a href="#" target="_blank">Collection</a></li>
+          <li><a href="#" target="_blank">Men</a></li>
+          <li><a href="#" target="_blank">Women</a></li>
+          <li><a href="#" target="_blank">About</a></li>
+          <li><a href="#" target="_blank">Contact</a></li>
+        </ul>
+        <div class="avatar">
+          <img src="images/icon-cart.svg" alt="icon-cart" class="icon-cart" />
+          <img src="images/image-avatar.png" alt="avatar" class="avatar-icon" />
+        </div>
+      </nav>
+      <section class="hero-grid">
+        <div class="sneak-peek">
+          <img
+            src="images/image-product-1.jpg"
+            alt="main-hero-image"
+            class="hero-image"
+          />
+          <div class="sneaks">
+            <img src="images/image-product-1.jpg" alt="" class="flex-images" />
+            <img src="images/image-product-2.jpg" alt="" class="flex-images" />
+            <img src="images/image-product-3.jpg" alt="" class="flex-images" />
+            <img src="images/image-product-4.jpg" alt="" class="flex-images" />
+          </div>
+        </div>
+        <div class="rhs">
+          <h5>Sneaker Company</h5>
+          <h1>Fall Limited Edition Sneakers</h1>
+          <p>
+            These two low-profile sneakers are your perfect casual wear
+            companion. Featuring a durable rubber outer sole, they'll withstand
+            everything the weather can offer
+          </p>
+          <div class="price">
+            <h4>$125.00</h4>
+            <p>50%</p>
+          </div>
+          <p class="strikethrough">$250</p>
+          <div class="last">
+            <div class="count">
+              <img
+                src="images/icon-minus.svg"
+                alt="minus-icon"
+                class="minus-icon"
+              />
+              <p class="number">0</p>
+              <img
+                src="images/icon-plus.svg"
+                alt="plus-icon"
+                class="plus-icon"
+              />
+            </div>
+            <div class="button" style="cursor: pointer">
+              <img src="images/icon-cart.svg" alt="" />
+              <p>Add to cart</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="relative-con">
+        <div class="sneak-peek modal hidden">
+          <img src="images/icon-close.svg" alt="" class="close-modal" />
+          <div>
+            <img src="images/icon-previous.svg" alt="" class="arrow prev" />
+            <img
+              src="images/image-product-1.jpg"
+              alt="modal-hero-image"
+              class="hero-image modal-image"
+              id="modal-image"
+            />
+            <img src="images/icon-next.svg" alt="" class="arrow next" />
+          </div>
+          <div class="sneaks">
+            <img src="images/image-product-1.jpg" alt="" class="pic" />
+            <img src="images/image-product-2.jpg" alt="" class="pic" />
+            <img src="images/image-product-3.jpg" alt="" class="pic" />
+            <img src="images/image-product-4.jpg" alt="" class="pic" />
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
