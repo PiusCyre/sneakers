@@ -19,6 +19,18 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+.time-element {
+  display: block;
+  margin: auto;
+  font-size: larger;
+  font-weight: 700;
+  position: relative;
+  bottom: 3rem;
+  margin-top: 3rem;
+  color: hsl(26, 100%, 55%);
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
 }

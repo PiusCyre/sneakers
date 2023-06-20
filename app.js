@@ -119,3 +119,8 @@ menuBtn.addEventListener("click", function (event) {
 exitBtn.addEventListener("click", function (event) {
   mobileNavUl.classList.add("nav-ul");
 });
+
+// time is money innit
+const timekeeper = document.querySelector(".time-element");
+const date = new Date();
+timekeeper.textContent = date.toDateString();

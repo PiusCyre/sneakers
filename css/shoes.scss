@@ -4,6 +4,18 @@
 
 @import "./variables";
 
+.time-element {
+  display: block;
+  margin: auto;
+  font-size: larger;
+  font-weight: 700;
+  position: relative;
+  bottom: 3rem;
+  margin-top: 3rem;
+  color: $orange--font;
+  cursor: pointer;
+}
+
 .hidden {
   display: none;
 }
