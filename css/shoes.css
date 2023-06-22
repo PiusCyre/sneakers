@@ -19,6 +19,10 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .time-element {
   display: block;
   margin: auto;
@@ -29,6 +33,7 @@ body {
   margin-top: 3rem;
   color: hsl(26, 100%, 55%);
   cursor: pointer;
+  width: 100%;
 }
 
 .hidden {

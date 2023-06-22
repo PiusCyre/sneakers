@@ -4,6 +4,9 @@
 
 @import "./variables";
 
+html {
+  scroll-behavior: smooth;
+}
 .time-element {
   display: block;
   margin: auto;
@@ -14,6 +17,7 @@
   margin-top: 3rem;
   color: $orange--font;
   cursor: pointer;
+  width: 100%;
 }
 
 .hidden {
