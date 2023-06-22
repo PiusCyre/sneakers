@@ -17,7 +17,7 @@ html {
   margin-top: 3rem;
   color: $orange--font;
   cursor: pointer;
-  width: 100%;
+  width: 40%;
 }
 
 .hidden {
@@ -382,11 +382,12 @@ section {
 
 @media only screen and (max-width: 420px) {
   .hero-grid {
+    width: 100%;
     .sneak-peek {
       align-items: center;
       justify-content: center;
       .hero-image {
-        width: 345px;
+        width: 340px;
         margin-inline: 0;
       }
       .sneaks {

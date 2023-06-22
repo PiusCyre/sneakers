@@ -33,7 +33,7 @@ html {
   margin-top: 3rem;
   color: hsl(26, 100%, 55%);
   cursor: pointer;
-  width: 100%;
+  width: 40%;
 }
 
 .hidden {
@@ -372,12 +372,15 @@ section .rhs .last .button img {
   }
 }
 @media only screen and (max-width: 420px) {
+  .hero-grid {
+    width: 100%;
+  }
   .hero-grid .sneak-peek {
     align-items: center;
     justify-content: center;
   }
   .hero-grid .sneak-peek .hero-image {
-    width: 345px;
+    width: 340px;
     margin-inline: 0;
   }
   .hero-grid .sneak-peek .sneaks {
