@@ -381,6 +381,10 @@ section {
 }
 
 @media only screen and (max-width: 420px) {
+  nav {
+    position: sticky;
+    z-index: 10;
+  }
   .hero-grid {
     width: 100%;
     .sneak-peek {
@@ -398,6 +402,7 @@ section {
       width: 70%;
       display: block;
       margin: auto;
+      margin-top: 3rem;
     }
   }
 }

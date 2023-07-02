@@ -372,6 +372,10 @@ section .rhs .last .button img {
   }
 }
 @media only screen and (max-width: 420px) {
+  nav {
+    position: sticky;
+    z-index: 10;
+  }
   .hero-grid {
     width: 100%;
   }
@@ -390,5 +394,6 @@ section .rhs .last .button img {
     width: 70%;
     display: block;
     margin: auto;
+    margin-top: 3rem;
   }
 }/*# sourceMappingURL=shoes.css.map */
